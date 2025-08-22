@@ -10,6 +10,8 @@ CREATE TABLE tripdata
 	month nvarchar(50) NULL
 ) 
 
+--Combining files into 1 table	
+	
 INSERT INTO tripdata SELECT * from Jan
 INSERT INTO tripdata SELECT * FROM Feb;
 INSERT INTO tripdata SELECT * FROM Mar;
@@ -26,7 +28,8 @@ INSERT INTO tripdata SELECT * FROM Dec;
 
 select * from tripdata -- 5597025 rows
 
-
+--Cleaning data and storing in different table
+	
 select *, 
 datediff(minute, started_at, ended_at) as ride_length
 into tripdata_cleaned 
@@ -37,7 +40,8 @@ and datediff(hour, started_at, ended_at) < 24
 
 select * from tripdata_cleaned -- 5512604 rows
 
-
+-- Total rides, average ride length, maximum ride length, minimum ride length by user type
+	
 select member_casual,
 count(*) as total_rides,
 avg(ride_length) as Avg_ride_length,
@@ -45,7 +49,8 @@ max(ride_length) as max_ride_length,
 min(ride_length) as min_ride_length
 from tripdata_cleaned
 group by member_casual
-
+	
+--Total rides by day of week
 
 select 
 member_casual,
@@ -64,7 +69,9 @@ ORDER BY member_casual,
             WHEN 'Saturday' THEN 6
             WHEN 'Sunday' THEN 7
          END;
-   
+
+--Total rides by month
+
 SELECT 
 member_casual, 
 month,
@@ -88,6 +95,7 @@ ORDER BY member_casual,
 			WHEN 'December' THEN 12
          END;
 
+-- Total rides by rideable type
 
 select member_casual,
 count(*) as total_rides,
@@ -95,4 +103,5 @@ rideable_type
 from tripdata_cleaned
 group by member_casual, rideable_type
 order by member_casual, rideable_type desc
+
 
