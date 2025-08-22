@@ -23,7 +23,12 @@ Increase annual memberships by identifying ride behavior differences and actiona
 
 ## Method (Google DA 6 Steps)
 1. **Ask** – What behaviors differ by rider type?  
-2. **Prepare** – Import 12 CSVs, schema alignment, set data types  
+2. **Prepare** – Imported 12 CSVs into Excel for initial profiling  
+3. **Process** – 
+   - In **Excel**:  
+     - Removed duplicates  
+     - Dropped `start_station_name` and `end_station_name` because >70% values were NULL  
+     - Added `day_of_week` and `month` helper columns   
 3. **Process** – Cleaning rules:
    - Drop rides with `started_at > ended_at`
    - Exclude durations ≤ 0 or > 24 hours
