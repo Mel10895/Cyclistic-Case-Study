@@ -87,6 +87,25 @@ Increase annual memberships by identifying ride behavior differences and actiona
 A cleaned subset of 1000 rows is included in (Data Sample/Cleaned data sample.csv).  
 Full raw dataset can be accessed from [Divvy/Cyclistic Public Data](https://divvy-tripdata.s3.amazonaws.com/index.html).
 
+## Repository Structure
+
+Cyclistic-Case-Study/
+├── README.md      ← Project overview & documentation
+├── Excel/         ← Initial cleaning in Excel
+│ └── initial_cleaning.xlsx
+├── SQL/           ← Data cleaning & analysis queries
+│ ├── 01_create_clean_table.sql
+│ └── 02_analysis_queries.sql
+├── PowerBI/       ← Final dashboard
+│ └── Dashboard.pdf
+├── assets/        ← Images used in README
+│ ├── avg-ride-length.png
+│ ├── rides-by-weekday.png
+│ └── rides-by-month.png
+└── data_sample/   ← A small cleaned dataset sample
+└── tripdata_clean_sample.csv
+
+
 ## Author
 **Melvin Philip**  
 - 📧 Email: melvin.philip108@gmail.com  
