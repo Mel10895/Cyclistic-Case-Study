@@ -56,7 +56,7 @@ Increase annual memberships by identifying ride behavior differences and actiona
    - Casual Riders: Saturday & Sunday
      
    Rideable Type Preference:
-   - Members ans Casual riders favor electric bikes
+   - Members & Casual riders favor electric bikes
      
    Usage Patterns:
    - Members ride more on weekdays (commuters)
