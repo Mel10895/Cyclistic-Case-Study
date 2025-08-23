@@ -88,21 +88,24 @@ A cleaned subset of 1000 rows is included in (Data Sample/Cleaned data sample.cs
 Full raw dataset can be accessed from [Divvy/Cyclistic Public Data](https://divvy-tripdata.s3.amazonaws.com/index.html).
 
 ## Repository Structure
-```Cyclistic-Case-Study/
-├── README.md      ← Project overview & documentation
-├── Excel/         ← Initial cleaning in Excel
-│ └── initial_cleaning.xlsx
-├── SQL/           ← Data cleaning & analysis queries
-│ ├── 01_create_clean_table.sql
-│ └── 02_analysis_queries.sql
-├── PowerBI/       ← Final dashboard
-│ └── Dashboard.pdf
-├── assets/        ← Images used in README
-│ ├── avg-ride-length.png
-│ ├── rides-by-weekday.png
-│ └── rides-by-month.png
-└── data_sample/   ← A small cleaned dataset sample
-└── tripdata_clean_sample.csv
+```
+Cyclistic-Case-Study/
+├── README.md                ← Project overview & documentation
+├── Excel/                   ← Initial cleaning in Excel
+│   └── 01. Data before cleaning.csv
+│   └── 02. Initial cleaning.csv
+├── SQL/                     ← Data cleaning & analysis queries
+│   ├── Data cleaning and analysis.sql
+├── PowerBI/                 ← Final dashboard
+│   └── Dashboard.pdf
+├── assets/                  ← Images used in README
+│   ├── ride length by user type.png
+│   ├── rides by user.png
+│   └── day of week.png
+│   ├── rides by month.png
+│   └── bike by user type.png
+└── data_sample/             ← A small cleaned dataset sample
+    └── Cleaned data sample.csv
 ```
 
 
