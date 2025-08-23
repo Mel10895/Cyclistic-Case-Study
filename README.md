@@ -83,25 +83,6 @@ Increase annual memberships by identifying ride behavior differences and actiona
   ![Rides by Weekday](Assets/day of week.png)  
   ![Rides by Month](Assets/rides by month.png)
 
-## Project Structure
-
-├── README.md
-├── Excel/
-│ └── 01. Data before cleaning.csv
-│ ├── 02. Initial cleaning.csv
-├── SQL/
-│ ├── Data cleaning and analysis.sql
-├── PowerBI/
-│ └── Dashboard.pdf
-├── assets/
-│ ├── ride length by user type.png
-│ └── rides by user.png
-│ ├── day of week.png
-│ └── rides by month.png
-│ ├── bike by user type.png
-└── data_sample/
-└── Cleaned data sample.csv
-
 ## Data Sample
 A cleaned subset of 1000 rows is included in (Data Sample/Cleaned data sample.csv).  
 Full raw dataset can be accessed from [Divvy/Cyclistic Public Data](https://divvy-tripdata.s3.amazonaws.com/index.html).
