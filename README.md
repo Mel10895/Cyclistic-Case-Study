@@ -50,11 +50,14 @@ Increase annual memberships by identifying ride behavior differences and actiona
    Average Ride Duration:
    - Members: 11 minutes
    - Casual Riders: 20 minutes
+     
    Most Popular Days:
    - Members: Tuesday–Thursday
    - Casual Riders: Saturday & Sunday
+     
    Rideable Type Preference:
    - Members ans Casual riders favor electric bikes
+     
    Usage Patterns:
    - Members ride more on weekdays (commuters)
    - Casual riders ride more on weekends (leisure)
