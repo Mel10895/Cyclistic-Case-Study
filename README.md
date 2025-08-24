@@ -1,4 +1,4 @@
-# Cyclistic-Case-Study
+# Cyclistic - Case Study
 
 **Role:** Data Analyst 
 • **Tools:** SQL Server, Power BI, Excel • 
